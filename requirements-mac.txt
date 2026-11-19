@@ -1,0 +1,28 @@
+# =============================================================================
+# 🌌 ORION | Optical Recognition & Intelligent Obstacle Navigation
+# Requisitos Optimizados para macOS (Apple Silicon M1/M2/M3/M4 & Intel x86_64)
+# =============================================================================
+
+# Deep Learning con soporte nativo de aceleración Metal Performance Shaders (MPS)
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=0.9.0
+
+# Visión por computador y procesamiento numérico
+opencv-python>=4.8.0
+numpy>=1.24.0,<2.0.0; python_version < "3.13"
+numpy>=2.1.0; python_version >= "3.13"
+Pillow>=9.5.0
+
+# Servidor Web Asíncrono y Telemetría WebSocket
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+websockets>=11.0
+
+# Red y Comunicación IoT con XIAO ESP32S3 Sense
+requests>=2.31.0
+urllib3>=1.26.0
+
+# Variables de entorno y pruebas
+python-dotenv>=1.0.0
+pytest>=7.4.0

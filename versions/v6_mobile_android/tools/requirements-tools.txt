@@ -1,0 +1,7 @@
+# Herramientas de PC para ORION v6 (Python 3.13)
+# Instalar en tools/.venv:  python -m venv .venv ; .venv\Scripts\python -m pip install -r requirements-tools.txt
+ai-edge-litert
+numpy
+pillow
+requests
+pytest
