@@ -1,0 +1,44 @@
+# Real device bindings. Each entry maps an `object_id` (the thing you bound a
+# polygon to in the editor) onto a driver.
+#
+# Nothing here is a secret — credentials live in `.env`, referenced by the
+# `*_env` keys below. Replace the hosts/MACs with your own.
+#
+# For a hardware-free run, use data/devices.dev.yaml instead:
+#   uv run python -m runtime --devices data/devices.dev.yaml
+
+# ==============================================================================
+# CONFIGURACIÓN DEL INTERRUPTOR DE LA LÁMPARA (Elegir una opción):
+# ==============================================================================
+# OPCIÓN A: Interruptor WiFi Universal (ESP32 / ESP8266 / Tasmota / Shelly / HTTP)
+- object_id: lamp_switch
+  type: wifi_switch
+  label: "Lámpara de Escritorio"
+  config:
+    mode: http_toggle         # Modos: http_toggle, http_stateful, tasmota, shelly
+    url: "http://192.168.1.150/toggle"  # Cambia por la IP de tu switch/relé WiFi
+    method: GET              # GET o POST
+    timeout_s: 2.0
+
+# OPCIÓN B: TP-Link Kasa Smart Switch (Alternativa para dispositivos Kasa/Tapo)
+# - object_id: lamp_switch
+#   type: kasa
+#   label: "Lamp switch (Kasa)"
+#   config:
+#     host_env: SMART_SWITCH_HOST
+#     username_env: KASA_USERNAME
+#     password_env: KASA_PASSWORD
+#     mac: "AA:BB:CC:DD:EE:FF"
+
+- object_id: book_pusher
+  type: book_pusher
+  label: "Book pusher"
+  config:
+    # A Raspberry Pi running your own book-pusher service on UDP 5007.
+    # Click sends PUSH, which the service expands into forward-to-goal then
+    # return-to-home. Right-click exposes Zero / Set goal.
+    #
+    # The Pi-side service is NOT in this repo — see docs/BOOK_PUSHER.md for
+    # the three-command protocol so you can write your own.
+    host: bookshelf-pi.local
+    port: 5007
