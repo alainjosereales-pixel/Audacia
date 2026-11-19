@@ -1,0 +1,52 @@
+# =============================================================================
+# 🌌 ORION | Optical Recognition & Intelligent Obstacle Navigation
+# Requisitos y Dependencias del Proyecto (Python >= 3.10)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 🧠 Inteligencia Artificial, Deep Learning & Estimación de Profundidad (MiDaS)
+# -----------------------------------------------------------------------------
+# PyTorch y Torchvision para inferencia monocular de profundidad en GPU/MPS/CPU
+torch>=2.0.0
+torchvision>=0.15.0
+# Modelos troncales (backbones) y arquitecturas requeridas por PyTorch Hub / MiDaS
+timm>=0.9.0
+
+# -----------------------------------------------------------------------------
+# 👁️ Visión por Computador y Procesamiento de Imágenes
+# -----------------------------------------------------------------------------
+# OpenCV para captura de video, renderizado de HUD, transformaciones y debanding
+opencv-python>=4.8.0
+# Compatibilidad garantizada: NumPy 1.x en Python 3.10-3.12 y NumPy 2.x precompilado en Python 3.13+
+numpy>=1.24.0,<2.0.0; python_version < "3.13"
+numpy>=2.1.0; python_version >= "3.13"
+# Procesamiento de imágenes, validación de integridad JPEG y manipulación de fotogramas
+Pillow>=9.5.0
+
+# -----------------------------------------------------------------------------
+# 🌐 Servidor Web Asíncrono, API REST & Telemetría en Tiempo Real
+# -----------------------------------------------------------------------------
+# Framework web asíncrono de alto rendimiento para el panel de control
+fastapi>=0.100.0
+# Servidor ASGI con soporte estándar (uvloop / httptools en sistemas compatibles)
+uvicorn[standard]>=0.22.0
+# Protocolo de comunicación bidireccional en tiempo real para transmisión de telemetría a 25 Hz
+websockets>=11.0
+
+# -----------------------------------------------------------------------------
+# 📡 Red e Internet de las Cosas (IoT: Seeed Studio XIAO ESP32S3 / ESP32-CAM)
+# -----------------------------------------------------------------------------
+# Cliente HTTP para consumo de stream MJPEG continuo y envío de comandos de control
+requests>=2.31.0
+urllib3>=1.26.0
+
+# -----------------------------------------------------------------------------
+# ⚙️ Gestión de Configuración y Variables de Entorno
+# -----------------------------------------------------------------------------
+# Carga automática de configuraciones desde el archivo .env
+python-dotenv>=1.0.0
+
+# -----------------------------------------------------------------------------
+# 🧪 Pruebas Unitarias y Diagnóstico
+# -----------------------------------------------------------------------------
+pytest>=7.4.0
