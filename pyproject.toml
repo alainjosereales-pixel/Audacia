@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "projection-mapper"
+version = "2.9.2"
+description = "Estudio profesional de Video Mapping, deformación de perspectiva homográfica y exportación de video acelerada por hardware"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Uso exclusivo para proyectos de investigación y producción - AudacIA" }
+authors = [
+    { name = "AudacIA", email = "contacto@audacia.lat" }
+]
+keywords = [
+    "projection-mapping",
+    "video-mapping",
+    "computer-vision",
+    "opencv",
+    "homography",
+    "bezier-curves",
+    "ffmpeg",
+    "hardware-acceleration"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Science/Research",
+    "Topic :: Multimedia :: Video :: Display",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS"
+]
+dependencies = [
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[project.scripts]
+projection-mapper = "main:main"
