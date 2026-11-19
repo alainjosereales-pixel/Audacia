@@ -319,6 +319,3 @@ Para profundizar en la arquitectura matemática y operativa del sistema:
 
 Desarrollado para **AudacIA** y el centro de investigación.  
 Uso autorizado para proyectos de investigación, producciones visuales interactivas, eventos culturales y espectáculos de video mapping arquitectónico.
-
-* **Contacto & Soporte Técnico:** [contacto@audacia.lat](mailto:contacto@audacia.lat)
-* **Repositorio Oficial:** [github.com/jhanhrndz/projection-mapper](https://github.com/jhanhrndz/projection-mapper)
