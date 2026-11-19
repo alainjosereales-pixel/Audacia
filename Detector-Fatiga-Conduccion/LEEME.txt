@@ -1,0 +1,16 @@
+DETECTOR DE SIGNOS DE FATIGA
+
+ESTRUCTURA:
+- iniciar.command: Script para iniciar con un doble clic en macOS.
+- web_app/:
+    * server.py: Servidor FastAPI de streaming y telemetria.
+    * better_detector.py: Detector facial MediaPipe (478 puntos).
+    * config.yaml: Configuracion de umbrales y camara.
+    * static/: Interfaz web offline (HTML, CSS, JS, Chart.js y alarma).
+- scripts/:
+    * simulate_click.py: Auto-desbloqueador de audio en Chrome.
+- src/:
+    * fatigue_analyzer.py: Logica de analisis de microsueños, cabeceo y bostezos.
+
+INICIO:
+Doble clic sobre 'iniciar.command' o ejecutar 'python web_app/server.py'.

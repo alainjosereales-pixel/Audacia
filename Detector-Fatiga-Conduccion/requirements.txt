@@ -1,0 +1,12 @@
+opencv-python
+mediapipe>=0.10.0
+numpy
+scipy
+imutils
+PyYAML
+fastapi>=0.100.0
+uvicorn>=0.22.0
+websockets
+pygame
+requests
+websocket-client
