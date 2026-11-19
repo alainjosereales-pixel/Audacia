@@ -1,0 +1,120 @@
+# ==============================================================================
+# PROJECTION MAPPER STUDIO - REGLAS DE CONTROL DE VERSIONES (.gitignore)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Entornos Virtuales y Dependencias de Python
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Archivos de Compilación y Caché de Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# Dependencias y Caché de Node.js / Frontend
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------------------------
+# Variables de Entorno y Secretos (ESTRICTO)
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# ------------------------------------------------------------------------------
+# Pruebas, Cobertura y Logs
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.log
+logs/
+
+# ------------------------------------------------------------------------------
+# Binarios y Ejecutables Externos Pesados (>50MB)
+# ------------------------------------------------------------------------------
+bin/
+*.exe
+*.dll
+
+# ------------------------------------------------------------------------------
+# Archivos Temporales y Scratch de Desarrollo
+# ------------------------------------------------------------------------------
+scratch/
+*.tmp
+*.tmp.*
+*.bak
+*.swp
+*~
+
+# ------------------------------------------------------------------------------
+# Archivos de Configuración de IDE y Editores
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# Archivos del Sistema Operativo
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------------------------
+# Archivos Multimedia de Usuario y Exportaciones de Video
+# (Preservar marcadores .gitkeep y assets base de demostración)
+# ------------------------------------------------------------------------------
+media/exports/*
+!media/exports/.gitkeep
+
+media/videos/*
+!media/videos/.gitkeep
+!media/videos/sample_loop.mp4
+!media/videos/video3.mp4
+
+media/images/*
+!media/images/.gitkeep
+!media/images/projection-mapper.png
+!media/images/ainex-nelson.jpeg
+!media/images/*.svg
