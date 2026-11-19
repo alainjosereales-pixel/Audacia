@@ -1,0 +1,138 @@
+# =============================================================================
+# 🌌 ORION | Optical Recognition & Intelligent Obstacle Navigation
+# Archivo de Exclusión de Git (.gitignore)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 🐍 Python: Archivos compilados, optimizaciones y caché
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# -----------------------------------------------------------------------------
+# 📦 Entornos Virtuales
+# -----------------------------------------------------------------------------
+.venv/
+.venv*/
+venv/
+venv*/
+ENV/
+env/
+versions/v6_mobile_android/tools/.venv/
+versions/v6_mobile_android/tools/.venv-*/
+
+# -----------------------------------------------------------------------------
+# 🌐 Node.js & Front-End (si aplica)
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------------------------------------------------------
+# 🔐 Variables de Entorno, Secretos & Credenciales
+# -----------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Credenciales de firmware en versiones (solo se versionan secrets.example.h)
+versions/**/secrets.h
+!versions/**/secrets.example.h
+
+# -----------------------------------------------------------------------------
+# 🧠 Pesos de Modelos Pesados (> 30 MB)
+# -----------------------------------------------------------------------------
+# Los modelos pesados deben descargarse con tools/fetch_model.py o PyTorch Hub
+*.pt
+*.pth
+*.onnx
+*.bin
+*.weights
+versions/v6_mobile_android/android/app/src/main/assets/*.tflite
+versions/v6_mobile_android/tools/models/
+
+# -----------------------------------------------------------------------------
+# 🧪 Pruebas, Cobertura y Métricas
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# -----------------------------------------------------------------------------
+# 📝 Logs, Telemetría Volátil y Archivos de Tiempo de Ejecución
+# -----------------------------------------------------------------------------
+*.log
+*.log.*
+.orion_port
+config/known_xiao_ips.json
+output_test/
+
+# -----------------------------------------------------------------------------
+# 💻 Archivos del Sistema Operativo
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# 🛠️ Entornos de Desarrollo (IDEs)
+# -----------------------------------------------------------------------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# 📱 Android / Gradle (ORION v6)
+# -----------------------------------------------------------------------------
+local.properties
+.gradle/
+.kotlin/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Espacio de trabajo de agentes y asistentes
+.superpowers/

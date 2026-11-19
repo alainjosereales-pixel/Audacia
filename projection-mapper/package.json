@@ -1,0 +1,22 @@
+{
+  "name": "projection-mapper",
+  "version": "2.9.2",
+  "description": "Estudio profesional de Projection Mapping - Interfaz web, motor de canvas en tiempo real y sincronización a 0 ms",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/test_contour_model.mjs",
+    "start": "python main.py"
+  },
+  "keywords": [
+    "projection-mapping",
+    "video-mapping",
+    "homography",
+    "bezier-curves",
+    "opencv",
+    "canvas-api",
+    "svg"
+  ],
+  "author": "AudacIA <contacto@audacia.lat>",
+  "license": "UNLICENSED",
+  "private": true
+}

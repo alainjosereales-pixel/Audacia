@@ -1,0 +1,26 @@
+# ==============================================================================
+# PROJECTION MAPPER STUDIO - DEPENDENCIAS DE PRODUCCIÓN
+# Para instalar: pip install -r requirements.txt
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Visión por Computador, Gráficos y Procesamiento de Video
+# ------------------------------------------------------------------------------
+# OpenCV: Carga y decodificación de video, cálculo de homografía de perspectiva 3x3
+# (cv2.getPerspectiveTransform, cv2.warpPerspective), rasterización vectorial de curvas
+# Bézier y contornos perimetrales, soporte de canal alfa transparente en texturas PNG.
+opencv-python>=4.8.0
+
+# ------------------------------------------------------------------------------
+# 2. Computación Científica, Álgebra Lineal y Matrices
+# ------------------------------------------------------------------------------
+# NumPy: Operaciones matriciales vectorizadas, cálculo de longitud de arco euclidiana,
+# cuantización periódica de fases para bucles continuos (seamless loops), normalización
+# de coordenadas de pantalla y manipulación de buffers de píxeles.
+numpy>=1.24.0
+
+# ------------------------------------------------------------------------------
+# 3. Configuración y Variables de Entorno (Utilidades)
+# ------------------------------------------------------------------------------
+# python-dotenv: Carga opcional y automática de variables desde archivos .env locales.
+python-dotenv>=1.0.0
